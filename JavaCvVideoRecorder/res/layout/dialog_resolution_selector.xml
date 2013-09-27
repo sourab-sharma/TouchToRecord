@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+	android:id="@+id/rootLayout"
+    android:background="@drawable/semi_transparent"
+     >
+     <RelativeLayout
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relHighResolution"
+          >
+         <RadioButton 
+             android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioHighResolution"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+             />
+     
+     <TextView android:id="@+id/txtHighResolution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:textColor="#fff"
+  android:layout_toRightOf="@id/radioHighResolution"
+     android:text="@string/resolutionHigh"
+     android:textSize="24sp"
+     android:layout_marginLeft="5dp"
+     android:layout_centerVertical="true"
+     
+    />
+     </RelativeLayout>
+      <RelativeLayout
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relMediumResolution"
+         android:layout_below="@id/relHighResolution"
+         android:layout_marginTop="10dp"
+          >
+         <RadioButton 
+             android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioMediumResolution"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+             />
+     <TextView android:id="@+id/txtMediumResolution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+     android:layout_toRightOf="@id/radioMediumResolution"
+        android:textColor="#fff"
+    android:layout_marginLeft="5dp"
+     android:text="@string/resolutionMedium"
+     
+     android:textSize="18sp"
+     android:layout_centerVertical="true"
+    />
+     </RelativeLayout>
+     <RelativeLayout
+          android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/relLowResolution"
+         android:layout_below="@id/relMediumResolution"
+         android:layout_marginTop="10dp"
+          >
+         <RadioButton 
+             android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/radioLowResolution"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="5dp"
+             />
+ <TextView android:id="@+id/txtLowResolution"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_toRightOf="@id/radioLowResolution"
+        android:textColor="#fff"
+     android:layout_centerHorizontal="true"
+     android:text="@string/resolutionLow"
+     
+     android:textSize="14sp"
+        android:layout_marginLeft="5dp"
+         android:layout_centerVertical="true"
+    />
+   </RelativeLayout>
+</RelativeLayout>
