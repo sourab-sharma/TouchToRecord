@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TouchToRecordDemo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="txt_start">Start</string>
+    <string name="txt_finish">Finish Activity</string>
+    <string name="unable_to_get_file">Unable to get recorded video.</string>
+</resources>
