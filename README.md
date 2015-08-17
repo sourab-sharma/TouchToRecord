@@ -1,4 +1,4 @@
-TouchToRecord
+TouchToRecord - Like Vine Recorder
 =============
 
 This code just provide a way to record audio and video separately and then merge them both using ffmpeg command, so that we can have pause/record function for user.
