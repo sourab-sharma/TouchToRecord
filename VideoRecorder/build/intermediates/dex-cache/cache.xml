@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\Android Studio\Android_Studio_1.4_Jan_2016\gradle\gradle-2.3\caches\modules-2\files-2.1\org.bytedeco\javacv\1.1\8b045838ae7e1fc31f0d407c6ab76933e7bddadb\javacv-1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="8b045838ae7e1fc31f0d407c6ab76933e7bddadb">
+        <dex dex="D:\Android_Studio_Workspace\workspace_sept_2015\VideoRecorder\app\build\intermediates\pre-dexed\debug\javacv-1.1-2bdef252469e61c78aea71bb64f14c6984f4600e.jar" />
+    </item>
+    <item
+        jar="D:\Android Studio\Android_Studio_1.4_Jan_2016\gradle\gradle-2.3\caches\modules-2\files-2.1\org.bytedeco\javacpp\1.1\1cc4b5dd88edd3dd3d6f4cdbd3c23c7273ebf0ea\javacpp-1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1cc4b5dd88edd3dd3d6f4cdbd3c23c7273ebf0ea">
+        <dex dex="D:\Android_Studio_Workspace\workspace_sept_2015\VideoRecorder\app\build\intermediates\pre-dexed\debug\javacpp-1.1-e2e95cc9ea87284ab4a059bfff213880decedbe0.jar" />
+    </item>
+    <item
+        jar="D:\Android Studio\Android_Studio_1.4_Jan_2016\gradle\gradle-2.3\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\opencv\3.0.0-1.1\902947d7faea1294a98e7c1aea76a581fe558a76\opencv-3.0.0-1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="902947d7faea1294a98e7c1aea76a581fe558a76">
+        <dex dex="D:\Android_Studio_Workspace\workspace_sept_2015\VideoRecorder\app\build\intermediates\pre-dexed\debug\opencv-3.0.0-1.1-809f50668fcbb1ccad7c52e0f330a94b3b7d6d41.jar" />
+    </item>
+    <item
+        jar="D:\Android Studio\Android_Studio_1.4_Jan_2016\gradle\gradle-2.3\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\libdc1394\2.2.3-1.1\cc4729d31a845dac338b851ff980fa4b3a6f50c9\libdc1394-2.2.3-1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="cc4729d31a845dac338b851ff980fa4b3a6f50c9">
+        <dex dex="D:\Android_Studio_Workspace\workspace_sept_2015\VideoRecorder\app\build\intermediates\pre-dexed\debug\libdc1394-2.2.3-1.1-7da574e6c368ac0e3f46ed7557c8a5c2832c9cfd.jar" />
+    </item>
+    <item
+        jar="D:\Android Studio\Android_Studio_1.4_Jan_2016\gradle\gradle-2.3\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\flandmark\1.07-1.1\1119273894b2f9aa27d02f8d4a9a0737894e54f5\flandmark-1.07-1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="1119273894b2f9aa27d02f8d4a9a0737894e54f5">
+        <dex dex="D:\Android_Studio_Workspace\workspace_sept_2015\VideoRecorder\app\build\intermediates\pre-dexed\debug\flandmark-1.07-1.1-b6635d44148585d6d87747d3938c1aca3b9fff84.jar" />
+    </item>
+    <item
+        jar="D:\Android Studio\Android_Studio_1.4_Jan_2016\gradle\gradle-2.3\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\artoolkitplus\2.3.1-1.1\7c2e2c018056b14b44c1a129412b4f660053d845\artoolkitplus-2.3.1-1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="7c2e2c018056b14b44c1a129412b4f660053d845">
+        <dex dex="D:\Android_Studio_Workspace\workspace_sept_2015\VideoRecorder\app\build\intermediates\pre-dexed\debug\artoolkitplus-2.3.1-1.1-c797b913c0691802ea90d0f10942c4cb139865d7.jar" />
+    </item>
+    <item
+        jar="D:\Android Studio\Android_Studio_1.4_Jan_2016\gradle\gradle-2.3\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\videoinput\0.200-1.1\dc9e5a91c5c5bbe202c040a05e205919e7e506e2\videoinput-0.200-1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="dc9e5a91c5c5bbe202c040a05e205919e7e506e2">
+        <dex dex="D:\Android_Studio_Workspace\workspace_sept_2015\VideoRecorder\app\build\intermediates\pre-dexed\debug\videoinput-0.200-1.1-2ac2aff2c2b6e82174229da2ca58c59cea56f19d.jar" />
+    </item>
+    <item
+        jar="D:\Android Studio\Android_Studio_1.4_Jan_2016\gradle\gradle-2.3\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\flycapture\2.8.3.1-1.1\edfb32efdb932836f1fc9e297a934f7585c15ba7\flycapture-2.8.3.1-1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="edfb32efdb932836f1fc9e297a934f7585c15ba7">
+        <dex dex="D:\Android_Studio_Workspace\workspace_sept_2015\VideoRecorder\app\build\intermediates\pre-dexed\debug\flycapture-2.8.3.1-1.1-01e99bea70393983df815a2932b06f189d1eb329.jar" />
+    </item>
+    <item
+        jar="D:\Android Studio\Android_Studio_1.4_Jan_2016\gradle\gradle-2.3\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\ffmpeg\2.8.1-1.1\e887e3cf952e0aa10212467c399d94a4daa78e2e\ffmpeg-2.8.1-1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="e887e3cf952e0aa10212467c399d94a4daa78e2e">
+        <dex dex="D:\Android_Studio_Workspace\workspace_sept_2015\VideoRecorder\app\build\intermediates\pre-dexed\debug\ffmpeg-2.8.1-1.1-c7a73ef7069b451d71b9244a0ea3ae3f12f41e1f.jar" />
+    </item>
+    <item
+        jar="D:\Android Studio\Android_Studio_1.4_Jan_2016\gradle\gradle-2.3\caches\modules-2\files-2.1\org.bytedeco.javacpp-presets\libfreenect\0.5.3-1.1\113cc95b2408698cf22588e60ac5e25734d8a260\libfreenect-0.5.3-1.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="113cc95b2408698cf22588e60ac5e25734d8a260">
+        <dex dex="D:\Android_Studio_Workspace\workspace_sept_2015\VideoRecorder\app\build\intermediates\pre-dexed\debug\libfreenect-0.5.3-1.1-9df081c0857006f46ca319f5aac0ae3a90cc984e.jar" />
+    </item>
+    <item
+        jar="D:\Android_Studio_1.4_Oct_2015\Android_Studio_SDK\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="D:\Android_Studio_Workspace\workspace_sept_2015\VideoRecorder\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-1b77f78bd459dc55bbc0480d8d3d0402b418e515.jar" />
+    </item>
+
+</items>
