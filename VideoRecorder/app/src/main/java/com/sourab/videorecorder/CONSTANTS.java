@@ -11,9 +11,10 @@ public class CONSTANTS {
 	public final static String VIDEO_EXTENSION = ".mp4";
 	public final static String IMAGE_EXTENSION = ".jpg";
 	public final static String DCIM_FOLDER = "/DCIM";
-	public final static String CAMERA_FOLDER = "/video";
+	public final static String IMAGE_FOLDER = "/image";
+	public final static String VIDEO_FOLDER = "/video";
 	public final static String TEMP_FOLDER = "/Temp";
-	public final static String TEMP_FOLDER_PATH = Environment.getExternalStorageDirectory().toString() + CONSTANTS.DCIM_FOLDER + CONSTANTS.CAMERA_FOLDER + CONSTANTS.TEMP_FOLDER;
+	public final static String TEMP_FOLDER_PATH = Environment.getExternalStorageDirectory().toString() + CONSTANTS.DCIM_FOLDER + CONSTANTS.VIDEO_FOLDER + CONSTANTS.TEMP_FOLDER;
 	public final static String  VIDEO_CONTENT_URI = "content://media/external/video/media";
 	
 	public final static int RESOLUTION_HIGH_VALUE = 2;

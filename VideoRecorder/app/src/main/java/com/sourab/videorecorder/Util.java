@@ -79,7 +79,7 @@ public class Util {
         String title = CONSTANTS.FILE_START_NAME + dateTaken;
         String filename = title + CONSTANTS.IMAGE_EXTENSION;
 
-        String dirPath = Environment.getExternalStorageDirectory() + "/Android/data/" + context.getPackageName() + "/video";
+        String dirPath = Environment.getExternalStorageDirectory() + "/Android/data/" + context.getPackageName() + CONSTANTS.IMAGE_FOLDER;
         File file = new File(dirPath);
         if (!file.exists() || !file.isDirectory())
             file.mkdirs();
@@ -107,7 +107,7 @@ public class Util {
 
     private static String genrateFilePath(Context context, String uniqueId, boolean isFinalPath, File tempFolderPath) {
         String fileName = CONSTANTS.FILE_START_NAME + uniqueId + CONSTANTS.VIDEO_EXTENSION;
-        String dirPath = Environment.getExternalStorageDirectory() + "/Android/data/" + context.getPackageName() + "/video";
+        String dirPath = Environment.getExternalStorageDirectory() + "/Android/data/" + context.getPackageName() + CONSTANTS.VIDEO_FOLDER;
         if (isFinalPath) {
             File file = new File(dirPath);
             if (!file.exists() || !file.isDirectory())
@@ -232,7 +232,7 @@ public class Util {
     }
 
     public static void deleteTempVideo(Context context) {
-        final String dirPath = Environment.getExternalStorageDirectory() + "/Android/data/" + context.getPackageName() + "/video";
+        final String dirPath = Environment.getExternalStorageDirectory() + "/Android/data/" + context.getPackageName() + CONSTANTS.VIDEO_FOLDER;
         new Thread(new Runnable() {
 
             @Override
@@ -308,4 +308,5 @@ public class Util {
 
         return strRecordingTime;
     }
+
 }
