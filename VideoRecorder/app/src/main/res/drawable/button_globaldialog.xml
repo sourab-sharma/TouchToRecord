@@ -3,9 +3,11 @@
     <item android:state_pressed="true">
         <color android:color="#DDDDDD"/>
     </item>
+
     <item android:state_enabled="true" android:state_pressed="false">
         <color android:color="#F5F5F5"/>
     </item>
+	
     <item android:state_enabled="false" android:state_pressed="false">
         <color android:color="#DDDDDD"/>
     </item>

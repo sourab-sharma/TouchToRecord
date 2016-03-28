@@ -28,6 +28,7 @@ import android.os.Handler;
 import android.os.Message;
 import android.os.PowerManager;
 import android.provider.MediaStore.Video;
+import android.provider.Settings;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
@@ -46,6 +47,9 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.sourab.videorecorder.interfaces.Interfaces;
+import com.sourab.videorecorder.util.CustomUtil;
+
 import org.bytedeco.javacv.FrameRecorder;
 
 import java.io.ByteArrayOutputStream;
@@ -61,7 +65,7 @@ import java.util.List;
 /**
  * Created by Sourab Sharma (sourab.sharma@live.in)  on 1/19/2016.
  */
-public class FFmpegRecorderActivity extends Activity implements OnClickListener, OnTouchListener {
+public class FFmpegRecorderActivity extends Activity implements OnClickListener, OnTouchListener,Interfaces.AddBitmapOverlayListener {
 
 	private final static String CLASS_LABEL = "RecordActivity";
 	private PowerManager.WakeLock mWakeLock;
@@ -196,9 +200,9 @@ public class FFmpegRecorderActivity extends Activity implements OnClickListener,
 		};
 	}
 	
-	static {
+	/*static {
 		System.loadLibrary("checkneon");
-	}
+	}*/
 
 	//public native static int  checkNeonFromJNI();
 	private boolean initSuccess = false;
@@ -424,8 +428,12 @@ public class FFmpegRecorderActivity extends Activity implements OnClickListener,
 
 	public void startRecording() {
 		try {
+			if(videoRecorder != null)
 			videoRecorder.start();
+			else finish();
+			if(audioThread != null)
 			audioThread.start();
+			else finish();
 		} catch (FFmpegFrameRecorder.Exception e) {
 			e.printStackTrace();
 		}
@@ -524,6 +532,29 @@ public class FFmpegRecorderActivity extends Activity implements OnClickListener,
 				isRecordingStarted = false;
 				releaseResources();
 			}
+			Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher);
+			String extStorageDirectory = Environment.getExternalStorageDirectory().toString();
+			File file = null;
+			try {
+				file = new File(extStorageDirectory, System.currentTimeMillis() + "_ic_launcher.PNG");
+			FileOutputStream outStream = new FileOutputStream(file);
+			bm.compress(Bitmap.CompressFormat.PNG, 100, outStream);
+				outStream.flush();
+			outStream.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+			String finalOutputPath = Util.createFinalPath(FFmpegRecorderActivity.this);
+if(!new File(finalOutputPath).exists())
+{
+	try {
+		new File(finalOutputPath).createNewFile();
+	} catch (IOException e) {
+		e.printStackTrace();
+	}
+}
+			CustomUtil.addBitmapOverlayOnVideo(FFmpegRecorderActivity.this,strVideoPath,file.getAbsolutePath(),finalOutputPath,CONSTANTS.OUTPUT_WIDTH,CONSTANTS.OUTPUT_HEIGHT);
+			strVideoPath = finalOutputPath;
 			publishProgress(100);
 			return null;
 		}
@@ -843,10 +874,11 @@ public class FFmpegRecorderActivity extends Activity implements OnClickListener,
 				 if (((Build.MODEL.startsWith("GT-I950"))
 						 || (Build.MODEL.endsWith("SCH-I959"))
 						 || (Build.MODEL.endsWith("MEIZU MX3")))&&focusModes.contains(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE)){
+						
 					 cameraParameters.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE);
 				 }else if(focusModes.contains(Camera.Parameters.FOCUS_MODE_CONTINUOUS_VIDEO)){
 					cameraParameters.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_VIDEO);
-				}else  if(focusModes.contains(Camera.Parameters.FOCUS_MODE_FIXED)) {
+				}else if(focusModes.contains(Camera.Parameters.FOCUS_MODE_FIXED)){
 					 cameraParameters.setFocusMode(Camera.Parameters.FOCUS_MODE_FIXED);
 				 }
 			}
@@ -1043,5 +1075,10 @@ public class FFmpegRecorderActivity extends Activity implements OnClickListener,
 				isRotateVideo = false;
 			}
 		}
+	}
+
+	@Override
+	public void OnBitmapOverlayAdded(int position) {
+
 	}
 }
