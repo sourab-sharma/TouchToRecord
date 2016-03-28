@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/Android_Studio_Workspace/workspace_sept_2015/VideoRecorder/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="alert">Alert</string>
+    <string name="app_name">Sourab VideoRecorder</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="discard_video_msg">Would you like to discard recording?</string>
+    <string name="finish">Finish</string>
+    <string name="next">Next</string>
+    <string name="processing">Processing…</string>
+    <string name="recorder_state_complete">Video Recording Complete.</string>
+    <string name="recorder_state_min_recorded">Minimum video recorded.</string>
+    <string name="recorder_state_min_video_crossed">Recording and Minimum recording reached…</string>
+    <string name="recorder_state_press_to_record">Press to record…</string>
+    <string name="recorder_state_recording">Recording…</string>
+    <string name="video_saved_path">Your video is saved at</string>
+    <!-- From: file:/D:/Android_Studio_Workspace/workspace_sept_2015/VideoRecorder/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="Dialog_loading" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    <style name="Dialog_loading_noDim" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>
