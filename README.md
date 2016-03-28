@@ -21,7 +21,7 @@ But frequently I have been getting message like
 "I guess the original library (https://github.com/qdrzwd/VideoRecorder) ........."
 
 I have emailed that guy to give credits but he refused as you have not set any License I am open to do anything.
-This affects me when I said resume to good company and my resume does not get selected if they think I have copied code.
+This affects me when I send resume to good company and my resume does not get selected if they think I have copied code.
 Please give me credits in your github repo at least, so that I dont get such comments.
 I will be highly thankful to you.
 
