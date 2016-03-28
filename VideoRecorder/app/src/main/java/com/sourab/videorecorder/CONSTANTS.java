@@ -10,7 +10,8 @@ public class CONSTANTS {
 	public final static String FILE_START_NAME = "Sourab_";
 	public final static String VIDEO_EXTENSION = ".mp4";
 	public final static String IMAGE_EXTENSION = ".jpg";
-	public final static String IMAGE_WATERMARK = "video_watermark";
+	public final static String WATERMARK_NAME = "video_watermark";
+	public final static String WATERMARK_EXTENSION = ".png";
 	public final static String DCIM_FOLDER = "/DCIM";
 	public final static String IMAGE_FOLDER = "/image";
 	public final static String VIDEO_FOLDER = "/video";

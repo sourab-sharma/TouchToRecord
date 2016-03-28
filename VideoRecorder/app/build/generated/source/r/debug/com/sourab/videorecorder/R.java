@@ -51,8 +51,9 @@ public final class R {
         public static final int progress_bar_grey=0x7f020025;
         public static final int record_icon=0x7f020026;
         public static final int recorder_success_progress=0x7f020027;
-        public static final int semi_transparent=0x7f020028;
-        public static final int sign_video=0x7f020029;
+        public static final int replace_it_with_your_watermark=0x7f020028;
+        public static final int semi_transparent=0x7f020029;
+        public static final int sign_video=0x7f02002a;
     }
     public static final class id {
         public static final int btn_cancel=0x7f060014;
