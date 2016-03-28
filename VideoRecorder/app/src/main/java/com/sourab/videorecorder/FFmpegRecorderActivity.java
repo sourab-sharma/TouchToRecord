@@ -847,8 +847,9 @@ public class FFmpegRecorderActivity extends Activity implements OnClickListener,
 					 cameraParameters.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE);
 				 }else if(focusModes.contains(Camera.Parameters.FOCUS_MODE_CONTINUOUS_VIDEO)){
 					cameraParameters.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_VIDEO);
-				}else
-					cameraParameters.setFocusMode(Camera.Parameters.FOCUS_MODE_FIXED);
+				}else  if(focusModes.contains(Camera.Parameters.FOCUS_MODE_CONTINUOUS_VIDEO)) {
+					 cameraParameters.setFocusMode(Camera.Parameters.FOCUS_MODE_FIXED);
+				 }
 			}
 		}
 		else
