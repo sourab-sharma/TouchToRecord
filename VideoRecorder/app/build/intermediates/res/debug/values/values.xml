@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/Android_Studio_Workspace/workspace_sept_2015/VideoRecorder/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/E:/Demo/VideoRecorder/VideoRecorder/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string name="alert">Alert</string>
     <string name="app_name">Sourab VideoRecorder</string>
@@ -16,7 +16,7 @@
     <string name="recorder_state_press_to_record">Press to record…</string>
     <string name="recorder_state_recording">Recording…</string>
     <string name="video_saved_path">Your video is saved at</string>
-    <!-- From: file:/D:/Android_Studio_Workspace/workspace_sept_2015/VideoRecorder/app/src/main/res/values/styles.xml -->
+    <!-- From: file:/E:/Demo/VideoRecorder/VideoRecorder/app/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
