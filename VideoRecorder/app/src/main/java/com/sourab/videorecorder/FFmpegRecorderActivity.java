@@ -843,11 +843,10 @@ public class FFmpegRecorderActivity extends Activity implements OnClickListener,
 				 if (((Build.MODEL.startsWith("GT-I950"))
 						 || (Build.MODEL.endsWith("SCH-I959"))
 						 || (Build.MODEL.endsWith("MEIZU MX3")))&&focusModes.contains(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE)){
-						
 					 cameraParameters.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_PICTURE);
 				 }else if(focusModes.contains(Camera.Parameters.FOCUS_MODE_CONTINUOUS_VIDEO)){
 					cameraParameters.setFocusMode(Camera.Parameters.FOCUS_MODE_CONTINUOUS_VIDEO);
-				}else  if(focusModes.contains(Camera.Parameters.FOCUS_MODE_CONTINUOUS_VIDEO)) {
+				}else  if(focusModes.contains(Camera.Parameters.FOCUS_MODE_FIXED)) {
 					 cameraParameters.setFocusMode(Camera.Parameters.FOCUS_MODE_FIXED);
 				 }
 			}
