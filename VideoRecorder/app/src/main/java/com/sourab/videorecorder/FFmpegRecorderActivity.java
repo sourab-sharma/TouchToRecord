@@ -523,6 +523,7 @@ public class FFmpegRecorderActivity extends Activity implements OnClickListener,
                 isRecordingStarted = false;
                 releaseResources();
             }
+            String finalOutputPath = null;
             if (CONSTANTS.DO_YOU_WANT_WATER_MARK_ON_VIDEO) {
                 publishProgress(50);
                 File file = Util.createWatermarkFilePath(FFmpegRecorderActivity.this);;
@@ -540,7 +541,7 @@ public class FFmpegRecorderActivity extends Activity implements OnClickListener,
                 }
 
 
-                String finalOutputPath = Util.createFinalPath(FFmpegRecorderActivity.this);
+                finalOutputPath =  Util.createFinalPath(FFmpegRecorderActivity.this);
                 if (!new File(finalOutputPath).exists()) {
                     try {
                         new File(finalOutputPath).createNewFile();
@@ -549,7 +550,7 @@ public class FFmpegRecorderActivity extends Activity implements OnClickListener,
                     }
                 }
                 publishProgress(60);
-                CustomUtil.addBitmapOverlayOnVideo(FFmpegRecorderActivity.this, strVideoPath, file.getAbsolutePath(), finalOutputPath, CONSTANTS.OUTPUT_WIDTH, CONSTANTS.OUTPUT_HEIGHT);
+                CustomUtil.addBitmapOverlayOnVideo(FFmpegRecorderActivity.this, strVideoPath, file.getAbsolutePath(), finalOutputPath);
                 strVideoPath = finalOutputPath;
             }
             publishProgress(100);
