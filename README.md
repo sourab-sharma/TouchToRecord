@@ -15,15 +15,12 @@ JavaCv Credits: https://github.com/bytedeco/javacv
 
 LICENSE:
 
-As I have mentioned earlier there is No License restriction from me but JAVACV license has to be obeyed as I have made this code with Genious Samuel Audet code.
-But frequently I have been getting message like 
+Give Credits and add this repo url to your blog/repo.
+No License restriction from me but JAVACV license has to be obeyed 
+as I have made this code with help of that repo.
+Check that at the time you are using this code.
 
-"I guess the original library (https://github.com/qdrzwd/VideoRecorder) ........."
 
-I have emailed that guy to give credits but he refused as you have not set any License I am open to do anything.
-This affects me when I send resume to good company and my resume does not get selected if they think I have copied code.
-Please give me credits in your github repo at least, so that I dont get such comments.
-I will be highly thankful to you.
 
 
 
