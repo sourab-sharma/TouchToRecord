@@ -10,7 +10,7 @@ import org.bytedeco.javacpp.avcodec;
 public class RecorderParameters {
 
     private static boolean AAC_SUPPORTED = Build.VERSION.SDK_INT >= 10;
-    private int videoCodec = avcodec.AV_CODEC_ID_MPEG4;
+    private int videoCodec = avcodec.AV_CODEC_ID_H264;
     private int videoFrameRate = 30;
     private int videoQuality = 5;
     private int audioCodec = AAC_SUPPORTED ? avcodec.AV_CODEC_ID_AAC : avcodec.AV_CODEC_ID_AMR_NB;

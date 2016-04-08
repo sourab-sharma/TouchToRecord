@@ -45,6 +45,7 @@ public class RecorderThread extends Thread {
     }
 
     public void putByteData(SavedFrames lastSavedframe) {
+        if(savedFrameList != null)
         savedFrameList.add(lastSavedframe);
     }
 

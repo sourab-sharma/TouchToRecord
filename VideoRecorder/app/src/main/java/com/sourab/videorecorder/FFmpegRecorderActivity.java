@@ -338,7 +338,7 @@ public class FFmpegRecorderActivity extends Activity implements OnClickListener,
                 }
                 RelativeLayout.LayoutParams layoutParam1 = new RelativeLayout.LayoutParams(screenWidth, (int) (screenWidth * (previewWidth / (previewHeight * 1f))));
                 layoutParam1.addRule(RelativeLayout.ALIGN_PARENT_TOP, RelativeLayout.TRUE);
-                RelativeLayout.LayoutParams layoutParam2 = new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
+                RelativeLayout.LayoutParams layoutParam2 = new RelativeLayout.LayoutParams(screenWidth,screenWidth);
                 layoutParam2.topMargin = screenWidth;
 
                 View view = new View(FFmpegRecorderActivity.this);
@@ -347,7 +347,7 @@ public class FFmpegRecorderActivity extends Activity implements OnClickListener,
                 view.setFocusableInTouchMode(false);
 
                 topLayout.addView(cameraView, layoutParam1);
-                topLayout.addView(view, layoutParam2);
+              //  topLayout.addView(view, layoutParam2);
 
                 topLayout.setOnTouchListener(FFmpegRecorderActivity.this);
 
@@ -411,7 +411,7 @@ public class FFmpegRecorderActivity extends Activity implements OnClickListener,
         videoRecorder.setAudioCodec(recorderParameters.getAudioCodec());
         videoRecorder.setVideoBitrate(recorderParameters.getVideoBitrate());
         videoRecorder.setAudioBitrate(recorderParameters.getAudioBitrate());
-
+        //videoRecorder.setVideoOption(recorderParameters.getAudioBitrate());
         audioRecordRunnable = new AudioRecordRunnable();
         audioThread = new Thread(audioRecordRunnable);
     }
