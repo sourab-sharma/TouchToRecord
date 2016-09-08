@@ -691,7 +691,7 @@ public class FFmpegRecorderActivity extends Activity implements OnClickListener,
         @Override
         public void surfaceDestroyed(SurfaceHolder holder) {
             try {
-                mHolder.addCallback(null);
+                mHolder.removeCallback(this);
                 cameraDevice.setPreviewCallback(null);
 
             } catch (RuntimeException e) {
